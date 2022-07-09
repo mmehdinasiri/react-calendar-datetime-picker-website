@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import DtPicker, { DtCalendar } from 'react-calendar-datetime-picker'
 import { DocLayout } from '../../Component'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import { tomorrowNightEighties } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
+import { Light } from 'react-syntax-highlighter'
+import tomorrowNightEighties from 'react-syntax-highlighter/dist/cjs/styles/hljs/tomorrow-night-eighties'
 // import { ReactComponent as ArrowLeft } from '../../Component/Icons/arrow-left.svg'
 // import { ReactComponent as ArrowRight } from '../../Component/Icons/arrow-right.svg'
 import {
@@ -112,13 +112,13 @@ const App = () => {
 				</h3>
 				<div className='block xl:flex '>
 					<div className='w-2/2 lg:w-3/4 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-						<SyntaxHighlighter
+						<Light
 							className='rounded'
 							style={tomorrowNightEighties}
 							language='javascript'
 						>
 							{singleExampleStr}
-						</SyntaxHighlighter>
+						</Light>
 					</div>
 					<div className='w-2/2 lg:w-1/4 xl:w-1/2'>
 						<DtPicker onChange={setSingleExample} />
@@ -135,13 +135,13 @@ const App = () => {
 				</h3>
 				<div className='block xl:flex '>
 					<div className='w-2/2 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-						<SyntaxHighlighter
+						<Light
 							className='rounded'
 							style={tomorrowNightEighties}
 							language='javascript'
 						>
 							{singleInitValueExampleStr}
-						</SyntaxHighlighter>
+						</Light>
 					</div>
 					<div className='w-2/2 lg:w-1/4 xl:w-1/2'>
 						<DtPicker
@@ -161,13 +161,13 @@ const App = () => {
 				</h3>
 				<div className='block xl:flex '>
 					<div className='w-2/2 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-						<SyntaxHighlighter
+						<Light
 							className='rounded'
 							style={tomorrowNightEighties}
 							language='javascript'
 						>
 							{singleUpdateInitValueExampleStr}
-						</SyntaxHighlighter>
+						</Light>
 					</div>
 					<div className='w-2/2 lg:w-1/4 xl:w-1/2'>
 						<button onClick={updateInitValue} className='btn rounded-0 mb-2'>
@@ -190,13 +190,13 @@ const App = () => {
 				</h3>
 				<div className='block xl:flex '>
 					<div className='w-2/2 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-						<SyntaxHighlighter
+						<Light
 							className='rounded'
 							style={tomorrowNightEighties}
 							language='javascript'
 						>
 							{singlePersianExampleStr}
-						</SyntaxHighlighter>
+						</Light>
 					</div>
 					<div className='w-2/2 lg:w-1/4 xl:w-1/2'>
 						<DtPicker
@@ -217,13 +217,13 @@ const App = () => {
 				</h3>
 				<div className='block xl:flex '>
 					<div className='w-2/2 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-						<SyntaxHighlighter
+						<Light
 							className='rounded'
 							style={tomorrowNightEighties}
 							language='javascript'
 						>
 							{rangeExampleStr}
-						</SyntaxHighlighter>
+						</Light>
 					</div>
 					<div className='w-2/2 lg:w-1/4 xl:w-1/2'>
 						<DtPicker onChange={setRangeExample} type='range' />
@@ -240,13 +240,13 @@ const App = () => {
 				</h3>
 				<div className='block xl:flex '>
 					<div className='w-2/2 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-						<SyntaxHighlighter
+						<Light
 							className='rounded'
 							style={tomorrowNightEighties}
 							language='javascript'
 						>
 							{rangeInitValueEExampleStr}
-						</SyntaxHighlighter>
+						</Light>
 					</div>
 					<div className='w-2/2 lg:w-1/4 xl:w-1/2'>
 						<DtPicker
@@ -270,13 +270,13 @@ const App = () => {
 				</h3>
 				<div className='block xl:flex '>
 					<div className='w-2/2 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-						<SyntaxHighlighter
+						<Light
 							className='rounded'
 							style={tomorrowNightEighties}
 							language='javascript'
 						>
 							{multiExampleStr}
-						</SyntaxHighlighter>
+						</Light>
 					</div>
 					<div className='w-2/2 lg:w-1/4 xl:w-1/2'>
 						<DtPicker onChange={setMultiExample} type='multi' />
@@ -293,13 +293,13 @@ const App = () => {
 				</h3>
 				<div className='block xl:flex '>
 					<div className='w-2/2 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-						<SyntaxHighlighter
+						<Light
 							className='rounded'
 							style={tomorrowNightEighties}
 							language='javascript'
 						>
 							{multiInitialValueExampleStr}
-						</SyntaxHighlighter>
+						</Light>
 					</div>
 					<div className='w-2/2 lg:w-1/4 xl:w-1/2'>
 						<DtPicker
@@ -342,13 +342,13 @@ const App = () => {
 				</h3>
 				<div className='block xl:flex '>
 					<div className='w-2/2 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-						<SyntaxHighlighter
+						<Light
 							className='rounded'
 							style={tomorrowNightEighties}
 							language='javascript'
 						>
 							{singleTimeExampleStr}
-						</SyntaxHighlighter>
+						</Light>
 					</div>
 					<div className='w-2/2 lg:w-1/4 xl:w-1/2'>
 						<DtPicker onChange={setSingleTimeExample} withTime showTimeInput />
@@ -365,13 +365,13 @@ const App = () => {
 				</h3>
 				<div className='block xl:flex '>
 					<div className='w-2/2 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-						<SyntaxHighlighter
+						<Light
 							className='rounded'
 							style={tomorrowNightEighties}
 							language='javascript'
 						>
 							{displayingOptionExampleStr}
-						</SyntaxHighlighter>
+						</Light>
 					</div>
 					<div className='w-2/2 lg:w-1/4 xl:w-1/2'>
 						<DtPicker
@@ -399,13 +399,13 @@ const App = () => {
 				</h3>
 				<div className='block xl:flex '>
 					<div className='w-2/2 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-						<SyntaxHighlighter
+						<Light
 							className='rounded'
 							style={tomorrowNightEighties}
 							language='javascript'
 						>
 							{callbackApiExampleStr}
-						</SyntaxHighlighter>
+						</Light>
 					</div>
 					<div className='w-2/2 lg:w-1/4 xl:w-1/2'>
 						<span className='block'>open: {open}</span>
@@ -432,13 +432,13 @@ const App = () => {
 				</h3>
 				<div className='block xl:flex '>
 					<div className='w-2/2 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-						<SyntaxHighlighter
+						<Light
 							className='rounded'
 							style={tomorrowNightEighties}
 							language='javascript'
 						>
 							{minMaxExampleStr}
-						</SyntaxHighlighter>
+						</Light>
 					</div>
 					<div className='w-2/2 lg:w-1/4 xl:w-1/2'>
 						<DtPicker
@@ -459,13 +459,13 @@ const App = () => {
 				</h3>
 				<div className='block xl:flex '>
 					<div className='w-2/2 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-						<SyntaxHighlighter
+						<Light
 							className='rounded'
 							style={tomorrowNightEighties}
 							language='javascript'
 						>
 							{disabledExampleStr}
-						</SyntaxHighlighter>
+						</Light>
 					</div>
 					<div className='w-2/2 lg:w-1/4 xl:w-1/2'>
 						<DtPicker
@@ -484,13 +484,13 @@ const App = () => {
 				</h3>
 				<div className='block xl:flex '>
 					<div className='w-2/2 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-						<SyntaxHighlighter
+						<Light
 							className='rounded'
 							style={tomorrowNightEighties}
 							language='javascript'
 						>
 							{autoCloseStr}
-						</SyntaxHighlighter>
+						</Light>
 					</div>
 					<div className='w-2/2 xl:w-1/2'>
 						<div className='mt-4'>
@@ -508,13 +508,13 @@ const App = () => {
 				</h3>
 				<div className='block xl:flex '>
 					<div className='w-2/2 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-						<SyntaxHighlighter
+						<Light
 							className='rounded'
 							style={tomorrowNightEighties}
 							language='javascript'
 						>
 							{withoutInputStr}
-						</SyntaxHighlighter>
+						</Light>
 					</div>
 					<div className='w-2/2 xl:w-1/2'>
 						<div className='mt-4'>
@@ -534,22 +534,22 @@ const App = () => {
 				</h3>
 				<div className='block xl:flex '>
 					<div className='w-2/2 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-						<SyntaxHighlighter
+						<Light
 							className='rounded'
 							style={tomorrowNightEighties}
 							language='javascript'
 						>
 							{customCalender}
-						</SyntaxHighlighter>
+						</Light>
 						<br />
 						<h4 className='text-lg'>Style</h4>
-						<SyntaxHighlighter
+						<Light
 							className='rounded'
 							style={tomorrowNightEighties}
 							language='css'
 						>
 							{customCalenderStyle}
-						</SyntaxHighlighter>
+						</Light>
 					</div>
 					<div className='w-2/2 lg:w-1/4 xl:w-1/2'>
 						<DtPicker

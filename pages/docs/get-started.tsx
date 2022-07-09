@@ -1,10 +1,7 @@
 import { DocLayout } from '../../Component'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import {
-	// dark,
-	tomorrowNightEighties
-	// atomOneDarkReasonable
-} from 'react-syntax-highlighter/dist/cjs/styles/hljs'
+
+import { Light } from 'react-syntax-highlighter'
+import tomorrowNightEighties from 'react-syntax-highlighter/dist/cjs/styles/hljs/tomorrow-night-eighties'
 
 const usageString = `
 import  DtPicker  from 'react-calendar-datetime-picker'
@@ -92,28 +89,28 @@ const QuickStart = () => {
 				<h2 className='text-2xl mb-3'>Installation:</h2>
 				<p className='text-lg mb-1'>The package can be installed via NPM:</p>
 				<div className='w-2/3'>
-					<SyntaxHighlighter style={tomorrowNightEighties} className='rounded'>
+					<Light style={tomorrowNightEighties} className='rounded'>
 						{'npm install react-calendar-datetime-picker'}
-					</SyntaxHighlighter>
+					</Light>
 				</div>
 				<p className='text-lg mb-1'>Or by using Yarn:</p>
 				<div className='w-2/3'>
-					<SyntaxHighlighter style={tomorrowNightEighties} className='rounded'>
+					<Light style={tomorrowNightEighties} className='rounded'>
 						{'yarn add react-calendar-datetime-picker'}
-					</SyntaxHighlighter>
+					</Light>
 				</div>
 			</section>
 			<section className='my-10'>
 				<h2 className='text-2xl mb-3'>Usage:</h2>
 				<p className='text-lg mb-1'>Here's an example of basic usage:</p>
 				<div className='w-2/3'>
-					<SyntaxHighlighter
+					<Light
 						className='rounded'
 						style={tomorrowNightEighties}
 						language='javascript '
 					>
 						{usageString}
-					</SyntaxHighlighter>
+					</Light>
 				</div>
 			</section>
 		</DocLayout>

@@ -1,7 +1,7 @@
 import { useState, FC } from 'react'
 import { DocLayout } from '../../Component'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import { tomorrowNightEighties } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
+import { Light } from 'react-syntax-highlighter'
+import tomorrowNightEighties from 'react-syntax-highlighter/dist/cjs/styles/hljs/tomorrow-night-eighties'
 import DtPicker, { Day, Range, Multi } from 'react-calendar-datetime-picker'
 import { typescriptStr } from '../../Constant/sampleString'
 
@@ -28,13 +28,13 @@ const Typescript: FC = () => {
 					<div className='mb-10 pb-4 border-b border-primary border-opacity-50 '>
 						<div className='block xl:flex '>
 							<div className='w-2/2 lg:w-3/4 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-								<SyntaxHighlighter
+								<Light
 									className='rounded'
 									style={tomorrowNightEighties}
 									language='javascript'
 								>
 									{typescriptStr}
-								</SyntaxHighlighter>
+								</Light>
 							</div>
 							<div className='w-2/2 lg:w-1/4 xl:w-1/2'>
 								<DtPicker

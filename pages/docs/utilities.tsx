@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { DocLayout } from '../../Component'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import { tomorrowNightEighties } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
+import { Light } from 'react-syntax-highlighter'
+import tomorrowNightEighties from 'react-syntax-highlighter/dist/cjs/styles/hljs/tomorrow-night-eighties'
 import { convertToEnStr, convertToFaStr } from '../../Constant/sampleString'
 import DtPicker, {
 	convertToFa,
@@ -32,13 +32,13 @@ const Utilities = () => {
 						</h3>
 						<div className='block xl:flex '>
 							<div className='w-2/2 lg:w-3/4 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-								<SyntaxHighlighter
+								<Light
 									className='rounded'
 									style={tomorrowNightEighties}
 									language='javascript'
 								>
 									{convertToFaStr}
-								</SyntaxHighlighter>
+								</Light>
 							</div>
 							<div className='w-2/2 lg:w-1/4 xl:w-1/2'>
 								<DtPicker onChange={setConvertToEnDate} />
@@ -60,13 +60,13 @@ const Utilities = () => {
 						</h3>
 						<div className='block xl:flex '>
 							<div className='w-2/2 lg:w-3/4 xl:w-1/2 pr-10 mb-4 xl:mb-0'>
-								<SyntaxHighlighter
+								<Light
 									className='rounded'
 									style={tomorrowNightEighties}
 									language='javascript'
 								>
 									{convertToEnStr}
-								</SyntaxHighlighter>
+								</Light>
 							</div>
 							<div className='w-2/2 lg:w-1/4 xl:w-1/2'>
 								<DtPicker onChange={setConvertToFaDate} withTime local='fa' />
