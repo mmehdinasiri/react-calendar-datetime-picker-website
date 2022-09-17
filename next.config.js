@@ -1,13 +1,13 @@
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 const path = require('path')
-const isProd = process.env.NODE_ENV === 'production'
+// const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
 	trailingSlash: true,
-	basePath: isProd ? '/react-calendar-datetime-picker' : '',
-	assetPrefix: isProd ? '/react-calendar-datetime-picker' : '',
+	basePath: '',
+	assetPrefix: '',
 	env: {
-		prefix: isProd ? '/react-calendar-datetime-picker' : ''
+		prefix: ''
 	},
 	webpackDevMiddleware: (config) => {
 		config.watchOptions = {
