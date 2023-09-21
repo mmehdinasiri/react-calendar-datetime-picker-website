@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import { Layout } from '../Component'
 import { DtCalendar } from 'react-calendar-datetime-picker'
 
 const Home = () => {
-	const [withoutInputEn, setWithoutInputEn] = useState(null)
-	const [withoutInputFa, setWithoutInputFa] = useState(null)
+	const [, setWithoutInputEn] = useState(null)
+	const [, setWithoutInputFa] = useState(null)
 	return (
 		<Layout>
 			<div className='mx-auto text-center '>

@@ -3,7 +3,8 @@ import { DocLayout } from '../../Component'
 import { Light } from 'react-syntax-highlighter'
 import tomorrowNightEighties from 'react-syntax-highlighter/dist/cjs/styles/hljs/tomorrow-night-eighties'
 import { convertToEnStr, convertToFaStr } from '../../Constant/sampleString'
-import DtPicker, {
+import {
+	DtPicker,
 	convertToFa,
 	convertToEn
 } from 'react-calendar-datetime-picker'

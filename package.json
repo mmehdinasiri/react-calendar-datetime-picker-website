@@ -11,9 +11,9 @@
 		"deploy": "rimraf out && yarn build && yarn export && touch out/.nojekyll && npm run copy && gh-pages -d out -t true"
 	},
 	"dependencies": {
-		"next": "10.0.9",
+		"next": "12.3.0",
 		"react": "^17.0.1",
-		"react-calendar-datetime-picker": "^1.6.3",
+		"react-calendar-datetime-picker": "^1.7.1",
 		"react-dom": "^17.0.1",
 		"sass": "^1.32.6"
 	},

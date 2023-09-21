@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import DtPicker, { DtCalendar } from 'react-calendar-datetime-picker'
+import { DtPicker, DtCalendar } from 'react-calendar-datetime-picker'
 import { DocLayout } from '../../Component'
 import { Light } from 'react-syntax-highlighter'
 import tomorrowNightEighties from 'react-syntax-highlighter/dist/cjs/styles/hljs/tomorrow-night-eighties'

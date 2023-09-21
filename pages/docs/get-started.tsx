@@ -4,8 +4,8 @@ import { Light } from 'react-syntax-highlighter'
 import tomorrowNightEighties from 'react-syntax-highlighter/dist/cjs/styles/hljs/tomorrow-night-eighties'
 
 const usageString = `
-import  DtPicker  from 'react-calendar-datetime-picker'
-import 'react-calendar-datetime-picker/dist/index.css'
+import { DtPicker } from 'react-calendar-datetime-picker'
+import 'react-calendar-datetime-picker/dist/style.css'
 
 const DatePicker = () => {
   const [date, setDate] = useState(null)

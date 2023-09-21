@@ -241,7 +241,7 @@ const DatePicker = () => {
 export default DatePicker
 `
 export const autoCloseStr = `
-import DtPicker from 'react-calendar-datetime-picker'
+import { DtPicker } from 'react-calendar-datetime-picker'
 const DatePicker = () => {
   const [date, setDate] = useState(null)
   return (
@@ -309,9 +309,7 @@ export const customCalenderStyle = `
 }
 `
 export const convertToFaStr = `
-import DtPicker, {
-  convertToFa
-} from 'react-calendar-datetime-picker'
+import { DtPicker, convertToFa } from 'react-calendar-datetime-picker'
 
 const DatePicker = () => {
   const [date, setDate] = useState(null)
@@ -327,9 +325,7 @@ const DatePicker = () => {
 export default DatePicker
 `
 export const convertToEnStr = `
-import DtPicker, {
-  convertToEn
-} from 'react-calendar-datetime-picker'
+import { DtPicker, convertToEn } from 'react-calendar-datetime-picker'
 
 const DatePicker = () => {
   const [date, setDate] = useState(null)
@@ -347,7 +343,7 @@ const DatePicker = () => {
 export default DatePicker
 `
 export const typescriptStr = `
-import DtPicker, { Day, Range, Multi  } from 'react-calendar-datetime-picker'
+import { DtPicker, Day, Range, Multi } from 'react-calendar-datetime-picker'
 
 const DatePicker = () => {
   const [date, setDate] = useState<Day>(null)
