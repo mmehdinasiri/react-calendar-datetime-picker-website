@@ -1,7 +1,10 @@
+import dynamic from 'next/dynamic'
 import { DocLayout } from '../../Component'
-
-import { Light } from 'react-syntax-highlighter'
 import tomorrowNightEighties from 'react-syntax-highlighter/dist/cjs/styles/hljs/tomorrow-night-eighties'
+
+const Light = dynamic(() => import('react-syntax-highlighter'), {
+	ssr: false
+})
 
 const usageString = `
 import { DtPicker } from 'react-calendar-datetime-picker'

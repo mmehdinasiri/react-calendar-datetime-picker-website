@@ -4,10 +4,10 @@ const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
 	trailingSlash: true,
-	basePath: isProd ? '/react-calendar-datetime-picker' : '',
-	assetPrefix: isProd ? '/react-calendar-datetime-picker' : '',
+	basePath: isProd ? '/react-calendar-datetime-picker-website' : '',
+	assetPrefix: isProd ? '/react-calendar-datetime-picker-website' : '',
 	env: {
-		prefix: isProd ? '/react-calendar-datetime-picker' : ''
+		prefix: isProd ? '/react-calendar-datetime-picker-website' : ''
 	},
 	webpackDevMiddleware: (config) => {
 		config.watchOptions = {

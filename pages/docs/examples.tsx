@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { DtPicker, DtCalendar } from 'react-calendar-datetime-picker'
 import { DocLayout } from '../../Component'
-import { Light } from 'react-syntax-highlighter'
 import tomorrowNightEighties from 'react-syntax-highlighter/dist/cjs/styles/hljs/tomorrow-night-eighties'
 // import { ReactComponent as ArrowLeft } from '../../Component/Icons/arrow-left.svg'
 // import { ReactComponent as ArrowRight } from '../../Component/Icons/arrow-right.svg'
@@ -24,7 +23,10 @@ import {
 	singleUpdateInitValueExampleStr,
 	autoCloseStr
 } from '../../Constant/sampleString'
-
+import dynamic from 'next/dynamic'
+const Light = dynamic(() => import('react-syntax-highlighter'), {
+	ssr: false
+})
 const App = () => {
 	const [singleExample, setSingleExample] = useState(null)
 	const [singleInitValueExample, setSingleInitValueExample] = useState({

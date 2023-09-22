@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { DocLayout } from '../../Component'
-import { Light } from 'react-syntax-highlighter'
 import tomorrowNightEighties from 'react-syntax-highlighter/dist/cjs/styles/hljs/tomorrow-night-eighties'
 import { convertToEnStr, convertToFaStr } from '../../Constant/sampleString'
 import {
@@ -8,7 +7,10 @@ import {
 	convertToFa,
 	convertToEn
 } from 'react-calendar-datetime-picker'
-
+import dynamic from 'next/dynamic'
+const Light = dynamic(() => import('react-syntax-highlighter'), {
+	ssr: false
+})
 const Utilities = () => {
 	const [convertToEnDate, setConvertToEnDate] = useState(null)
 	const [convertToFaDate, setConvertToFaDate] = useState(null)

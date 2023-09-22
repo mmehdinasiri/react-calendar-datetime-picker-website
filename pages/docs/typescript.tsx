@@ -1,9 +1,12 @@
 import { useState, FC } from 'react'
 import { DocLayout } from '../../Component'
-import { Light } from 'react-syntax-highlighter'
 import tomorrowNightEighties from 'react-syntax-highlighter/dist/cjs/styles/hljs/tomorrow-night-eighties'
 import { DtPicker, Day, Range, Multi } from 'react-calendar-datetime-picker'
 import { typescriptStr } from '../../Constant/sampleString'
+import dynamic from 'next/dynamic'
+const Light = dynamic(() => import('react-syntax-highlighter'), {
+	ssr: false
+})
 
 const Typescript: FC = () => {
 	const [date, setDate] = useState<Day>()
